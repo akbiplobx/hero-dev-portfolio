@@ -7,7 +7,7 @@
 header {
     background-color: #FFF8F3;
     background: url(../images/developer.png), url(../images/header_bg.png), #FFF8F3;
-    background-position: top left, bottom right;
+    background-position: 23px 38px, bottom right;
     background-repeat: no-repeat;
     padding-top: 50px;
 }
@@ -18,13 +18,16 @@ header {
 
 }
 
-.logo h2 {
+/* .logo h2 {
     font-size: 45px;
     font-weight: 900;
+} */
+.logo img{
+    width: 100px;
 }
 
 .color-orange {
-    color: #fd6e0a;
+    color: green;
 }
 
 .btn {
@@ -36,6 +39,9 @@ header {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+}
+.btn:hover{
+    background: green;
 }
 
 .section-heading {
@@ -55,6 +61,9 @@ header {
     line-height: 30px;
     color: #757575;
 }
+.text-center{
+    text-align: center;
+}
 
 /* ------------------------------------- */
 
@@ -71,8 +80,9 @@ nav .menu {
     display: flex;
     list-style: none;
     gap: 50px;
-    align-items: center;
+    align-items: center;    
 }
+
 
 nav .menu a {
     font-style: 20px;
@@ -80,10 +90,13 @@ nav .menu a {
     text-decoration: none;
 }
 
+nav .menu a:hover{
+    color: green;
+}
 #banner {
 
     /* border: 1px solid red; */
-    margin: 47px 38px 0 230px;
+    margin: 0px 38px 0 230px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,7 +133,7 @@ nav .menu a {
     vertical-align: middle;
 }
 
-#about {
+#about,#skills,#resume {
     padding-top: 130px;
 }
 
@@ -146,9 +159,7 @@ nav .menu a {
 .about-info .info-card h4{
     font-size: 20px;
 }
-#skills{
-    padding-top: 130px;
-}
+
 #skills .skill-container{
     width: 71%;
     max-width: 1140px;
@@ -177,4 +188,85 @@ nav .menu a {
     font-size: 16px;
     color: #757575;
     line-height: 28px;
+}
+#resume .resume-container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 113px auto 0;
+    display: flex;
+    gap: 24px;
+}
+.resume-container  .section-title{
+    color: #474747;
+    font-size: ;
+    margin-bottom: 30px;
+
+}
+.resume-card{
+    max-width: 511px;
+    margin-right: 47px;
+}
+.resume-card .card-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #474747;
+}
+.resume-card .card-info{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #757575;
+}
+.resume-card .card-text{
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+}
+.resume-container hr{
+    margin: 30px 0;}
+footer{
+    margin-top: 130px;
+    padding: 130px;
+    background-color: #FFF8F3;
+}
+footer .fotter-container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 116px;
+}
+.fotter-container .social{
+    max-width: 562px;
+}
+.fotter-container h2{
+    color: #181818;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.fotter-container .social p{
+    color: #474747;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.fotter-container .icons a{
+     margin-right: 24px;
+}
+.fotter-container .fa-brands{
+    color: #fd6e0a;
+    font-size: 30px;
+}
+.fotter-container .fa-brands:hover{
+    color: green;
+}
+.fotter-container form input[type='text'], input[type='email'], .fotter-container form textarea{
+    width: 461px;
+    padding: 18px 31px;
+    margin-bottom: 24px;
+    border: none;
+    border-radius: 5px;
+    color: #757575;
+
 }
